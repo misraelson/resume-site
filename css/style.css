@@ -54,7 +54,7 @@ body {
   min-height: 100vh; }
 
 .container {
-  height: 100vh;
+  height: 100%;
   font-size: 2rem;
   text-align: left;
   padding: 2rem;
@@ -62,8 +62,6 @@ body {
   grid-template-rows: 6rem 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
-  .container > * {
-    padding: 1rem; }
 
 .header {
   grid-area: head;
@@ -103,28 +101,27 @@ body {
   grid-column: grid-start / grid-end;
   background-color: var(--color-primary-dark);
   padding: 15rem 5rem 5rem 5rem;
+  border-radius: 8px;
   display: grid;
   grid-template-columns: [info-start] 1fr [info-end];
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 3.5rem;
+  grid-gap: 3rem;
   justify-content: center; }
-  .info.box-1 {
+  .info .box-1 {
     background-color: lightskyblue;
-    grid-column: info-start / info-end;
-    grid-row: 1 / 2; }
-  .info.box-2 {
+    grid-column: info-start / info-end; }
+  .info .box-2 {
     background-color: lightskyblue;
-    grid-column: info-start / info-end;
-    grid-row: 2 / 3; }
-  .info.box-3 {
+    grid-column: info-start / info-end; }
+  .info .box-3 {
     background-color: lightskyblue;
-    grid-column: info-start / info-end;
-    grid-row: 3 / 4; }
-  .info.box-4 {
+    grid-column: info-start / info-end; }
+  .info .box-4 {
     background-color: lightskyblue;
-    grid-column: info-start / info-end;
-    grid-row: 4 / 5; }
-  .info.box-5 {
+    grid-column: info-start / info-end; }
+  .info .box-5 {
     background-color: lightskyblue;
-    grid-column: info-start / info-end;
-    grid-row: 5 / 6; }
+    grid-column: info-start / info-end; }
+
+.box {
+  border-radius: 2rem;
+  padding: 2rem; }
