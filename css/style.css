@@ -56,10 +56,10 @@ body {
 .container {
   height: 100%;
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   display: grid;
-  grid-template-rows: 6rem 10rem 10rem auto;
+  grid-template-rows: auto 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
 
@@ -102,26 +102,12 @@ body {
   background-color: var(--color-primary-dark);
   padding: 15rem 5rem 5rem 5rem;
   border-radius: 8px;
+  text-align: left;
   display: grid;
   grid-template-columns: [info-start] 1fr [info-end];
-  grid-gap: 3rem;
+  grid-gap: 3.5rem;
   justify-content: center; }
-  .info .box-1 {
-    background-color: lightskyblue;
-    grid-column: info-start / info-end; }
-  .info .box-2 {
-    background-color: lightskyblue;
-    grid-column: info-start / info-end; }
-  .info .box-3 {
-    background-color: lightskyblue;
-    grid-column: info-start / info-end; }
-  .info .box-4 {
-    background-color: lightskyblue;
-    grid-column: info-start / info-end; }
-  .info .box-5 {
-    background-color: lightskyblue;
-    grid-column: info-start / info-end; }
-
-.box {
-  border-radius: 2rem;
-  padding: 2rem; }
+  .info .content-box {
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: var(--color-primary-light); }

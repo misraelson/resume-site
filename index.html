@@ -13,19 +13,156 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">Matthew Israelson</div>
+      <div class="header">
+        <h1>Matthew Israelson</h1>
+        <h3>This site was built using only HTML + CSS</h3>
+      </div>
       <div class="circle-cutout">
         <div class="photo">
           PHOTO BOX
         </div>
       </div>
       <section class="info">
-        Professional
-        <div class="box box-1">Professional Experience</div>
-        <div class="box box-2">Project Experience</div>
-        <div class="box box-3">Academic Background</div>
-        <div class="box box-4">Core Skills</div>
-        <div class="box box-5">Volunteer Experience</div>
+
+        <h1>Development Experience</h1>
+        <div class="content-box">
+          <a href="http://woodseer.com">Woodseer Dividend Forecasting</a>
+          <h2>Junior Developer</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Built out new design specs for client-facing landing page that could display live data pulled from Rails backend</li>
+            <li>Expanded test coverage for main dividend forecasting algorithm in RSPEC</li>
+            <li>Wrote integration tests for admin functionality within main Woodseer dash via Cucumber and RSPEC</li>
+            <li>Gave creative input to CTO when asked and contributed design ideas for a daily accuracy score badge displayed in the 'live' section of the new site</li>
+            <li>Implemented mobile optimization using SCSS for entire site</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a href="http://codecore.ca">CodeCore Developer Bootcamp</a>
+          <h2>Teachers Assistant</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Expand students knowledge of JavaScript, React, Rails, NodeJS and SQL</li>
+            <li>Guide students through coding challenges and homework assignments</li>
+            <li>Help with project scope and project planning for graduation projects</li>
+            <li>Mark and give feedback on homework assignments</li>
+            <li>Lead career development workshops to hone resumes, cover letters and interview prep</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a href="http://redlinemedialive.com">Red Line Media</a>
+          <h2>Full-Stack PHP Customization</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Complete overhaul and redesign of old (circa 2007) era company site</li>
+            <li>Wrote pure HTML + CSS to implement a custom contact form</li>
+            <li>Mobile-enabled, full-size video backgrounds</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a href="http://buymorebucha.com">Bucha Brew Kombucha</a>
+          <h2>Shopify Development</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Full-stack shopify design and development</li>
+            <li>Wrote Liquid code to create an order form for wholesale and retail clients</li>
+            <li>Implemented a customer tagging system to enable tiered pricing for different customer types</li>
+          </ul>
+        </div>
+        <h1>Related Experience</h1>
+        <div class="content-box">      
+          <a href="http://risekombucha.com">Rise Kombucha</a>
+          <h2>Microbiologist and Quality Assurance</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Responisble for data entry and tracking of key metrics related to Kombucha microbial health and wellness</li>
+            <li>Oversaw 3x growth in production capacity as we moved to a new production facility</li>
+            <li>Collaborated with key members of management and quality team to scale and transfer process to new equipment stack</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a>QSV Biologics</a>
+          <h2>Microbiologist and Manufacturing Technician</h2>
+          <h3>Primary Directives</h3>
+          <ul>
+            <li>Oversaw process of purification of pharmaceutical product intended for Stage 3 (human) clinical trials</li>
+            <li>Responisble for training new employees on homogenization process + proper machine maintenance</li>
+          </ul>
+        </div>
+
+        <h1>Portfolio Projects</h1>
+        <div class="content-box">      
+          <a href="http://shmoover.com">Shmoover</a>
+          <h2>Tech: Ruby on Rails, Postges AWS, Stripe</h2>
+          <h3>Uber style hailing app connecting you with a 'micro-mover' in your area </h3>
+          <ul>
+            <li>Integrated Stripe API for securely handling payments + implemented 'managed account' beta to allow for a frictionless transfer of funds into Shmoover' driver accounts</li>
+            <li>Utilized Google Maps API with geocoder gem to locate and route jobs for movers</li>
+            <li>Deployed via AWS Elactic Beanstalk with EC2 server suite and secured with SSL certificate</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a href="#">Just Breathing</a>
+          <h2>Tech: React Native + Expo</h2>
+          <h3>A mobile application to guide you into deeper, calmer breath</h3>
+          <ul>
+            <li>React implementation of Start-Stop-Pause buttons and state, a session timer that counts up and can be paused, and stateful components to track if cycle is on the inhale or exhale breath</li>
+            <li>Utlization of Expo's built in animation library for smooth easing transitions between in-breath/out-breath in the breath ball component</li>
+            <li>Custom sound design and use of Expo Sound API to play different lengths of sound in response to duration of breaths per minute the user selects</li>
+          </ul>
+        </div>
+        <div class="content-box">      
+          <a href="http://streakers.com">Streakers</a>
+          <h2>Tech: React + Chart.js + Ruby on Rails API + Redis/Sidekiq + Heroku</h2>
+          <h3>Activity streak tracker with animated charts</h3>
+          <ul>
+            <li>Used AXIOS library to send requests to Rails postgres API backend</li>
+            <li>Tested API request/response routes with Postman</li>
+            <li>Integrated react immutability helper for clean state updates</li>
+            <li>Added Chart.js and randomColor.js for animated, eye-popping user data display charts</li>
+            <li>Customized CRON jobs with Redis and Sidekiq for updating streak objects in the background every 24 hours</li>
+            <li>Deployed via Heroku with React project submoduled inside the Rails app</li>
+          </ul>
+        </div>
+        
+        <h1>Academic Background</h1>
+          <div class="content-box">
+            <h2> Full-stack Web Development Bootcamp Certificate of Completion</h2>
+            <h3>CodeCore Developer Bootcamp - 2016</h3>
+            <h2>Complete React Developer Course</h2>
+            <h3>Udemy - 2019 (currently in progress)</h3>
+            <h2>Advanced Front-End Design CSS + SASS Certificate of Completion</h2>
+            <h3>Udemy - 2019</h3>
+            <h2>Dissecting Ruby on Rails 5 Certificate of Completion</h2>
+            <h3>Udemy - 2018</h3>
+            <h2>B. Science - Microbiology + Analytical Chemistry</h2>
+            <h3>University of Alberta - 2010</h3>
+          </div>
+        <h1>Technical Skillset</h1>
+        <div class="content-box">
+          <h2>Web Technologies</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>React JS</li>
+            <li>React Native</li>
+            <li>HTML5, CSS3</li>
+            <li>Ruby on Rails / API Architecture</li>
+            <li>PostgreSQL</li>
+            <li>AWS, ECS, Elastic Beanstalk</li>
+            <li>SSL Certification + deployment on AWS</li>
+            <li>Heroku CLI + Deployment</li>
+          </ul>
+        </div>
+        <h1>Hobbies + Volunteer</h1>
+        <div class="content-box">
+          <h2>One Yoga For The People</h2>
+          <h3>2+ years volunteer experience as keyholder and new client success manager</h3>
+          <h2>Mercy Ships International Medical Aid</h2>
+          <h3>6 month overseas health-care outreach in Sierra Leone</h3>
+          <h2>Music Production</h2>
+          <h3>Proficient in Ableton Live 9 Mixing Sound Production</h3>
+        </div>
       </section>
     </div>
   </body>
