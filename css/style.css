@@ -55,6 +55,9 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+h1 {
+  border-bottom: var(--line); }
+
 .container {
   height: 100%;
   font-size: 2rem;
@@ -98,11 +101,12 @@ body {
     justify-content: center;
     align-items: center; }
     .circle-cutout__photo--image {
-      background-blend-mode: difference;
       width: 18rem;
       height: 18rem;
       border-radius: 50%;
-      background-image: linear-gradient(to right bottom, grey, black), url(../resources/image1.jpg); }
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-image: linear-gradient(to right bottom, var(--color-primary-dark), var(--color-primary-light)), url(../resources/nat-9.jpg); }
 
 .info {
   grid-row: 3 / -1;
@@ -120,10 +124,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 45rem; }
   .card__side {
     background-color: var(--color-primary-light);
-    padding: 3rem;
     border-radius: 2rem;
     height: 50rem;
     transition: all 1s ease;
@@ -132,9 +135,13 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    box-shadow: var(--shadow-dark); }
+    box-shadow: var(--shadow-dark);
+    overflow: hidden; }
     .card__side--front {
-      background-color: var(--color-primary-light); }
+      background-color: var(--color-primary-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
     .card__side--back {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
       transform: rotateY(180deg); }
@@ -143,8 +150,37 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
+    background-size: cover;
+    height: 30rem;
+    background-blend-mode: multiply;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg); }
+  .card__heading {
+    font-size: 2.1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+    text-align: right;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  .card__logo {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10rem; }
-    .card__picture--1 {
+    height: 5rem; }
+    .card__logo--1 {
       background-image: url(../resources/woodseer_white.png); }
+    .card__logo--2 {
+      background-image: url(../resources/woodseer_white.png); }
+    .card__logo--3 {
+      background-image: url(../resources/woodseer_white.png); }
+  .card__details ul {
+    width: 80%; }
+    .card__details ul li {
+      font-size: 1.5rem;
+      padding: 2rem; }

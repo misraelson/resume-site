@@ -65,12 +65,13 @@
     align-items: center;
     
     &--image {
-      background-blend-mode: difference;
-      // clip-path: circle(45% at 50% 50%);
+      // clip-path: circle(45% at 50% 50%); FOR IMG TAG
       width: 18rem;
       height: 18rem;
       border-radius: 50%;
-      background-image:  linear-gradient(to right bottom, grey, black), url(../resources/image1.jpg);
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-image:  linear-gradient(to right bottom, var(--color-primary-dark), var(--color-primary-light)), url(../resources/nat-9.jpg);
     }
   }
 }
@@ -92,15 +93,13 @@
 
 // Card flip functionality
 .card {
-  
   perspective: 150rem;
   -moz-perspective: 150rem;
   position:  relative;
-  height: 50rem;
+  height: 45rem;
   
   &__side {
     background-color: var(--color-primary-light);
-    padding: 3rem;
     border-radius: 2rem;
     height: 50rem;
     transition: all 1s ease;
@@ -110,9 +109,13 @@
     width: 100%;
     backface-visibility: hidden;
     box-shadow: var(--shadow-dark);
+    overflow: hidden;
 
     &--front {
       background-color: var(--color-primary-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     &--back {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark) );
@@ -120,7 +123,6 @@
     }
   }
 
-  // height: 50rem;
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
@@ -128,16 +130,62 @@
     transform: rotateY(0);
   }
 
-  // Front Side Styling
+  // FRONT CARD STYLING
   &__picture {
+    background-size: cover;
+    height: 30rem;
+    background-blend-mode: multiply;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+
+    &--1 {
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+    text-align: right;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(#2998ff, .85), rgba(#5643fa, .85));
+  }
+
+  &__logo {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10rem;
+    height: 5rem;
     // assume that this code is written in style.css file, and find directory from there
     &--1 {
       background-image: url(../resources/woodseer_white.png)
     }
+    &--2 {
+      background-image: url(../resources/woodseer_white.png)
+    }
+    &--3 {
+      background-image: url(../resources/woodseer_white.png)
+    }
   }
+
+  // BACK SIDE STYLING
+
+  &__details {
+
+    ul {
+      width: 80%;
+      li {
+        font-size: 1.5rem;
+        padding: 2rem;
+      }
+    }
+  }
+
 }
 
 
