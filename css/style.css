@@ -155,9 +155,11 @@ h1 {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-9.jpg); }
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/coding-1.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg); }
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-2-large.jpg); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/bucha-1.jpg); }
   .card__heading {
     display: flex;
     flex-direction: column;
@@ -174,19 +176,28 @@ h1 {
     background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__logo {
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-top: 5%; }
     .card__logo--1 {
       background-image: url(../resources/woodseer_white.png);
       height: 5rem;
-      margin-left: 50%;
-      margin-top: 5%; }
+      width: 20rem;
+      align-self: end; }
     .card__logo--2 {
       background-image: url(../resources/codecore-1.jpg);
       height: 5rem;
       width: 5rem;
       align-self: end; }
     .card__logo--3 {
-      background-image: url(../resources/woodseer_white.png); }
+      background-image: url(../resources/redline-logo.png);
+      height: 8rem;
+      width: 15rem;
+      align-self: end; }
+    .card__logo--4 {
+      background-image: url(../resources/bucha-logo.png);
+      height: 5rem;
+      width: 20rem;
+      align-self: end; }
   .card__details {
     display: flex;
     flex-direction: column;
