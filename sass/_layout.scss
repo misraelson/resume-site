@@ -63,6 +63,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    &__profile {
+      clip-path: circle(45% at 50% 50%);
+    }
   }
 }
 
@@ -76,13 +80,12 @@
   
   display: grid;
   grid-template-columns:  [info-start] 1fr [info-end];
-  // grid-template-rows: repeat(5, 1fr);
   grid-gap: 3.5rem;
   justify-content: center;
 
   .content-box {
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: var(--color-primary-light)
   }
 }

@@ -95,6 +95,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .circle-cutout .photo__profile {
+      clip-path: circle(45% at 50% 50%); }
 
 .info {
   grid-row: 3 / -1;
@@ -109,5 +111,5 @@ body {
   justify-content: center; }
   .info .content-box {
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: var(--color-primary-light); }
