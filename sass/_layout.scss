@@ -96,7 +96,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position:  relative;
-  height: 45rem;
+  height: 50rem;
   
   &__side {
     background-color: var(--color-primary-light);
@@ -113,9 +113,9 @@
 
     &--front {
       background-color: var(--color-primary-light);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
     }
     &--back {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark) );
@@ -161,6 +161,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 5rem;
+    margin-left: 50%;
+    margin-top: 5%;
     // assume that this code is written in style.css file, and find directory from there
     &--1 {
       background-image: url(../resources/woodseer_white.png)
@@ -176,12 +178,15 @@
   // BACK SIDE STYLING
 
   &__details {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
     ul {
-      width: 80%;
+      width: 85%;
       li {
-        font-size: 1.5rem;
-        padding: 2rem;
+        font-size: 1.8rem;
+        padding: 1rem;
       }
     }
   }
