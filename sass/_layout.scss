@@ -51,21 +51,26 @@
   justify-content: center;
   align-items: center;
   
-  .photo {
+  &__photo {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     background-color: lightskyblue;
     z-index: 2;
-
+    
     // center the text
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    &__profile {
-      clip-path: circle(45% at 50% 50%);
+    &--image {
+      background-blend-mode: difference;
+      // clip-path: circle(45% at 50% 50%);
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      background-image:  linear-gradient(to right bottom, grey, black), url(../resources/image1.jpg);
     }
   }
 }
@@ -85,6 +90,7 @@
 
 }
 
+// Card flip functionality
 .card {
   
   perspective: 150rem;
@@ -97,28 +103,40 @@
     padding: 3rem;
     border-radius: 2rem;
     height: 50rem;
-    transition: all .8s ease;
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    box-shadow: var(--shadow-dark);
 
     &--front {
       background-color: var(--color-primary-light);
     }
     &--back {
-      background-color: green;
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark) );
       transform: rotateY(180deg);
     }
   }
 
   // height: 50rem;
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  // Front Side Styling
+  &__picture {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10rem;
+    // assume that this code is written in style.css file, and find directory from there
+    &--1 {
+      background-image: url(../resources/woodseer_white.png)
+    }
   }
 }
 

@@ -19,6 +19,8 @@ Grey dark 3: #999
   --color-primary: #3930D8;
   --color-primary-light: #25B8F6;
   --color-primary-dark: #7350F2;
+  --color-secondary-light: #2998ff;
+  --color-secondary-dark: #5643fa;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -85,7 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .circle-cutout .photo {
+  .circle-cutout__photo {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
@@ -95,8 +97,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .circle-cutout .photo__profile {
-      clip-path: circle(45% at 50% 50%); }
+    .circle-cutout__photo--image {
+      background-blend-mode: difference;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      background-image: linear-gradient(to right bottom, grey, black), url(../resources/image1.jpg); }
 
 .info {
   grid-row: 3 / -1;
@@ -120,18 +126,25 @@ body {
     padding: 3rem;
     border-radius: 2rem;
     height: 50rem;
-    transition: all .8s ease;
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    box-shadow: var(--shadow-dark); }
     .card__side--front {
       background-color: var(--color-primary-light); }
     .card__side--back {
-      background-color: green;
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10rem; }
+    .card__picture--1 {
+      background-image: url(../resources/woodseer_white.png); }
