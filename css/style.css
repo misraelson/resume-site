@@ -154,7 +154,13 @@ h1 {
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-9.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg); }
   .card__heading {
+    display: flex;
+    flex-direction: column;
     font-size: 2.1rem;
     font-weight: 200;
     text-transform: uppercase;
@@ -168,14 +174,17 @@ h1 {
     background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__logo {
     background-size: contain;
-    background-repeat: no-repeat;
-    height: 5rem;
-    margin-left: 50%;
-    margin-top: 5%; }
+    background-repeat: no-repeat; }
     .card__logo--1 {
-      background-image: url(../resources/woodseer_white.png); }
+      background-image: url(../resources/woodseer_white.png);
+      height: 5rem;
+      margin-left: 50%;
+      margin-top: 5%; }
     .card__logo--2 {
-      background-image: url(../resources/woodseer_white.png); }
+      background-image: url(../resources/codecore-1.jpg);
+      height: 5rem;
+      width: 5rem;
+      align-self: end; }
     .card__logo--3 {
       background-image: url(../resources/woodseer_white.png); }
   .card__details {

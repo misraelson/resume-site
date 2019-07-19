@@ -113,9 +113,6 @@
 
     &--front {
       background-color: var(--color-primary-light);
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
     }
     &--back {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark) );
@@ -141,9 +138,17 @@
     &--1 {
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg);
     }
+    &--2 {
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-9.jpg);
+    }
+    &--3 {
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg);
+    }
   }
 
   &__heading {
+    display: flex;
+    flex-direction: column;
     font-size: 2.1rem;
     font-weight: 200;
     text-transform: uppercase;
@@ -160,18 +165,24 @@
   &__logo {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 5rem;
-    margin-left: 50%;
-    margin-top: 5%;
+  
     // assume that this code is written in style.css file, and find directory from there
     &--1 {
-      background-image: url(../resources/woodseer_white.png)
+      background-image: url(../resources/woodseer_white.png);
+      height: 5rem;
+      margin-left: 50%;
+      margin-top: 5%;
     }
     &--2 {
-      background-image: url(../resources/woodseer_white.png)
+      background-image: url(../resources/codecore-1.jpg);
+      height: 5rem;
+      width: 5rem;
+      align-self: end;
+      // margin-left: 50%;
+      // margin-top: 5%;
     }
     &--3 {
-      background-image: url(../resources/woodseer_white.png)
+      background-image: url(../resources/woodseer_white.png);
     }
   }
 
