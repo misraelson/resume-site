@@ -13,12 +13,6 @@
   & > * {
     // padding: 1rem;
   }
-
-  // MEDIA QUERIES
-  // @media only screen and (max-width: $bp-largest) {
-  //   margin: 0;
-  //   max-width: 100%;
-  // }
 }
 
 
@@ -147,19 +141,40 @@
     &--4 {
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/bucha-1.jpg);
     }
+    &--5 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-2.jpg) center;
+      background-size: cover;
+    }
+    &--6 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-1.jpg) center;
+      background-size: cover;
+    }
+    &--7 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/moving-1.jpg) center;
+      background-size: cover;
+    }
+    &--8 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/breath-1.jpg) center;
+      background-size: cover;
+      // position: absolute;
+      // bottom: 0px;
+    }
   }
 
   &__heading {
     display: flex;
     flex-direction: column;
+
     font-size: 2.1rem;
     font-weight: 200;
     text-transform: uppercase;
+    text-align: right;
+
     padding: 1.5rem;
     position: absolute;
     top: 20rem;
     right: 2rem;
-    text-align: right;
+    width: 45rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background-image: linear-gradient(to right bottom, rgba(#2998ff, .85), rgba(#5643fa, .85));
@@ -179,8 +194,8 @@
     }
     &--2 {
       background-image: url(../resources/codecore-1.jpg);
-      height: 5rem;
-      width: 5rem;
+      height: 6rem;
+      width: 6rem;
       align-self: end;
       // margin-left: 50%;
     }
@@ -196,6 +211,13 @@
       width: 20rem;
       align-self: end;
     }
+    &--5 {
+      background-image: url(../resources/rise-2.png);
+      height: 6rem;
+      width: 6rem;
+      align-self: end;
+    }
+
   }
 
   // BACK SIDE STYLING
@@ -215,6 +237,12 @@
   }
 
 }
+
+// MEDIA QUERIES
+// @media only screen and (max-width: $bp-largest) {
+//   margin: 0;
+//   max-width: 100%;
+// }
 
 
 // align-items: center; // STRETCH / center / end / start

@@ -160,17 +160,30 @@ h1 {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-2-large.jpg); }
     .card__picture--4 {
       background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/bucha-1.jpg); }
+    .card__picture--5 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-2.jpg) center;
+      background-size: cover; }
+    .card__picture--6 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-1.jpg) center;
+      background-size: cover; }
+    .card__picture--7 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/moving-1.jpg) center;
+      background-size: cover; }
+    .card__picture--8 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/breath-1.jpg) center;
+      background-size: cover; }
   .card__heading {
     display: flex;
     flex-direction: column;
     font-size: 2.1rem;
     font-weight: 200;
     text-transform: uppercase;
+    text-align: right;
     padding: 1.5rem;
     position: absolute;
     top: 20rem;
     right: 2rem;
-    text-align: right;
+    width: 45rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
@@ -185,8 +198,8 @@ h1 {
       align-self: end; }
     .card__logo--2 {
       background-image: url(../resources/codecore-1.jpg);
-      height: 5rem;
-      width: 5rem;
+      height: 6rem;
+      width: 6rem;
       align-self: end; }
     .card__logo--3 {
       background-image: url(../resources/redline-logo.png);
@@ -197,6 +210,11 @@ h1 {
       background-image: url(../resources/bucha-logo.png);
       height: 5rem;
       width: 20rem;
+      align-self: end; }
+    .card__logo--5 {
+      background-image: url(../resources/rise-2.png);
+      height: 6rem;
+      width: 6rem;
       align-self: end; }
   .card__details {
     display: flex;
