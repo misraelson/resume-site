@@ -83,10 +83,42 @@
   grid-gap: 3.5rem;
   justify-content: center;
 
-  .content-box {
-    border-radius: 2rem;
+}
+
+.card {
+  
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position:  relative;
+  height: 50rem;
+  
+  &__side {
+    background-color: var(--color-primary-light);
     padding: 3rem;
-    background-color: var(--color-primary-light)
+    border-radius: 2rem;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &--front {
+      background-color: var(--color-primary-light);
+    }
+    &--back {
+      background-color: green;
+      transform: rotateY(180deg);
+    }
+  }
+
+  // height: 50rem;
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
   }
 }
 

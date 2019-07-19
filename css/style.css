@@ -109,7 +109,29 @@ body {
   grid-template-columns: [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
   justify-content: center; }
-  .info .content-box {
-    border-radius: 2rem;
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    background-color: var(--color-primary-light);
     padding: 3rem;
-    background-color: var(--color-primary-light); }
+    border-radius: 2rem;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: var(--color-primary-light); }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
