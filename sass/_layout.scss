@@ -124,7 +124,7 @@
   // FRONT CARD STYLING
   &__picture {
     background-size: cover;
-    height: 30rem;
+    height: 38rem;
     background-blend-mode: multiply;
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
@@ -162,6 +162,10 @@
       background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/circle-1.jpg) center;
       background-size: cover;
     }
+    &--10 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/learning-1.jpg) center;
+      background-size: cover;
+    }
   }
 
   &__heading {
@@ -182,7 +186,7 @@
     box-decoration-break: clone;
     background-image: linear-gradient(to right bottom, rgba(#2998ff, .85), rgba(#5643fa, .85));
   }
-
+  // LOGOS
   &__logo {
     background-size: contain;
     background-repeat: no-repeat;
