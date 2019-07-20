@@ -136,7 +136,8 @@
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/coding-1.jpg);
     }
     &--3 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-2-large.jpg);
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-2-large.jpg) center;
+      background-size: cover;
     }
     &--4 {
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/bucha-1.jpg);
@@ -156,8 +157,10 @@
     &--8 {
       background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/breath-1.jpg) center;
       background-size: cover;
-      // position: absolute;
-      // bottom: 0px;
+    }
+    &--9 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/circle-1.jpg) center;
+      background-size: cover;
     }
   }
 
@@ -215,6 +218,19 @@
       background-image: url(../resources/rise-2.png);
       height: 6rem;
       width: 6rem;
+      align-self: end;
+    }
+    &--7 {
+      background-image: url(../resources/shmoover-1-logo.jpg);
+      background-size: cover;
+      height: 9rem;
+      width: 15rem;
+      align-self: end;
+    }
+    &--8 {
+      background-image: url(../resources/just-breathing-logo.png);
+      height: 10rem;
+      width: 10rem;
       align-self: end;
     }
 
