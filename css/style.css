@@ -244,33 +244,39 @@ h1 {
       display: flex;
       width: 100%;
       justify-content: space-around; }
+    .card__logo--img {
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
     .card__logo--11 {
-      background-image: url(../resources/ruby-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem; }
+      background-image: url(../resources/ruby-logo.png); }
     .card__logo--12 {
-      background-image: url(../resources/rails-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem; }
+      background-image: url(../resources/rails-logo.png); }
     .card__logo--13 {
-      background-image: url(../resources/react-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem; }
+      background-image: url(../resources/react-logo.png); }
     .card__logo--14 {
-      background-image: url(../resources/js-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem; }
+      background-image: url(../resources/js-logo.png); }
+    .card__logo--15 {
+      background-image: url(../resources/ableton-logo.jpg); }
+    .card__logo--16 {
+      background-image: url(../resources/mercyships-logo.jpg); }
+    .card__logo--17 {
+      background-image: url(../resources/oneyoga-logo.jpg); }
   .card__details {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem; }
     .card__details ul {
-      width: 85%; }
+      width: 90%; }
       .card__details ul li {
         font-size: 1.8rem;
         padding: 1rem; }
+  .card__skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    justify-items: center;
+    padding: 2rem; }
+    .card__skills li {
+      font-size: 1.8rem;
+      padding: 1rem; }

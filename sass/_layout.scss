@@ -253,51 +253,71 @@
       display: flex;
       width: 100%;
       justify-content: space-around;
+    
     }
 
+    &--img {
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+    // RUBY
     &--11 {
       background-image: url(../resources/ruby-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem;
     }
+    // RAILS
     &--12 {
       background-image: url(../resources/rails-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem;
     }
+    // REACT
     &--13 {
       background-image: url(../resources/react-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem;
     }
+    // JAVASCRIPT
     &--14 {
       background-image: url(../resources/js-logo.png);
-      height: 8rem;
-      width: 8rem;
-      border-radius: 1.2rem;
     }
-   
+    //ABLETON
+    &--15 {
+      background-image: url(../resources/ableton-logo.jpg);
+    }
+    // MERCY SHIPS
+    &--16 {
+      background-image: url(../resources/mercyships-logo.jpg);
+    }
+    // ONE YOGA 
+    &--17 {
+      background-image: url(../resources/oneyoga-logo.jpg);
+    }
   }
 
-  // BACK SIDE STYLING
-
+  // ==========> BACK SIDE CARD STYLING
   &__details {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+
     ul {
-      width: 85%;
+      width: 90%;
       li {
         font-size: 1.8rem;
         padding: 1rem;
       }
     }
   }
+  // BACK OF SKILLS CARD
+  &__skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    justify-items: center;
+    padding: 2rem;
 
+    li {
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+  }
 }
 
 // MEDIA QUERIES
