@@ -166,6 +166,14 @@
       background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/learning-1.jpg) center;
       background-size: cover;
     }
+    &--11 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/skills.jpg) center;
+      background-size: cover;
+    }
+    &--12 {
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/volunteer.jpg) center;
+      background-size: cover;
+    }
   }
 
   &__heading {
@@ -190,54 +198,88 @@
   &__logo {
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 5%;
-  
-    // assume that this code is written in style.css file, and find directory from there
+    margin-top: 1.5rem;
+    align-self: end;
+    // MUST ASSUME code is ACCESS FROM STYLE.CSS file => find url image directory from there
+    // WOODSEER
     &--1 {
       background-image: url(../resources/woodseer_white.png);
       height: 5rem;
       width: 20rem;
-      align-self: end;
     }
+    // CODECORE
     &--2 {
       background-image: url(../resources/codecore-1.jpg);
-      height: 6rem;
-      width: 6rem;
-      align-self: end;
-      // margin-left: 50%;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
     }
+    // REDLINE
     &--3 {
       background-image: url(../resources/redline-logo.png);
       height: 8rem;
-      width: 15rem;
-      align-self: end;
+      width: 13.5rem;
     }
+    // BUCHA
     &--4 {
       background-image: url(../resources/bucha-logo.png);
       height: 5rem;
       width: 20rem;
-      align-self: end;
     }
+    // RISE
     &--5 {
       background-image: url(../resources/rise-2.png);
-      height: 6rem;
-      width: 6rem;
-      align-self: end;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
     }
+    // SHMOOVER
     &--7 {
       background-image: url(../resources/shmoover-1-logo.jpg);
       background-size: cover;
-      height: 9rem;
-      width: 15rem;
-      align-self: end;
+      height: 8rem;
+      width: 13.4rem;
+      border-radius: 1.2rem;
     }
+    // BREATHE
     &--8 {
       background-image: url(../resources/just-breathing-logo.png);
-      height: 10rem;
-      width: 10rem;
-      align-self: end;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
     }
 
+    &--box {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &--11 {
+      background-image: url(../resources/ruby-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+    &--12 {
+      background-image: url(../resources/rails-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+    &--13 {
+      background-image: url(../resources/react-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+    &--14 {
+      background-image: url(../resources/js-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+   
   }
 
   // BACK SIDE STYLING

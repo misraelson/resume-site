@@ -56,7 +56,9 @@ body {
   min-height: 100vh; }
 
 h1 {
-  border-bottom: var(--line); }
+  border-bottom: var(--line);
+  font-weight: 200;
+  font-size: 4rem; }
 
 .container {
   height: 100%;
@@ -179,6 +181,12 @@ h1 {
     .card__picture--10 {
       background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/learning-1.jpg) center;
       background-size: cover; }
+    .card__picture--11 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/skills.jpg) center;
+      background-size: cover; }
+    .card__picture--12 {
+      background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/volunteer.jpg) center;
+      background-size: cover; }
   .card__heading {
     display: flex;
     flex-direction: column;
@@ -197,43 +205,65 @@ h1 {
   .card__logo {
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 5%; }
+    margin-top: 1.5rem;
+    align-self: end; }
     .card__logo--1 {
       background-image: url(../resources/woodseer_white.png);
       height: 5rem;
-      width: 20rem;
-      align-self: end; }
+      width: 20rem; }
     .card__logo--2 {
       background-image: url(../resources/codecore-1.jpg);
-      height: 6rem;
-      width: 6rem;
-      align-self: end; }
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
     .card__logo--3 {
       background-image: url(../resources/redline-logo.png);
       height: 8rem;
-      width: 15rem;
-      align-self: end; }
+      width: 13.5rem; }
     .card__logo--4 {
       background-image: url(../resources/bucha-logo.png);
       height: 5rem;
-      width: 20rem;
-      align-self: end; }
+      width: 20rem; }
     .card__logo--5 {
       background-image: url(../resources/rise-2.png);
-      height: 6rem;
-      width: 6rem;
-      align-self: end; }
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
     .card__logo--7 {
       background-image: url(../resources/shmoover-1-logo.jpg);
       background-size: cover;
-      height: 9rem;
-      width: 15rem;
-      align-self: end; }
+      height: 8rem;
+      width: 13.4rem;
+      border-radius: 1.2rem; }
     .card__logo--8 {
       background-image: url(../resources/just-breathing-logo.png);
-      height: 10rem;
-      width: 10rem;
-      align-self: end; }
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
+    .card__logo--box {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+    .card__logo--11 {
+      background-image: url(../resources/ruby-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
+    .card__logo--12 {
+      background-image: url(../resources/rails-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
+    .card__logo--13 {
+      background-image: url(../resources/react-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
+    .card__logo--14 {
+      background-image: url(../resources/js-logo.png);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem; }
   .card__details {
     display: flex;
     flex-direction: column;
