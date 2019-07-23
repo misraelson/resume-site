@@ -333,28 +333,33 @@
   @media only screen and (max-width: 56.25em),
          only screen and (hover:none) {
     height: auto;
-    border-radius: 3px;
+    border-radius: 2rem;
     background-color: var(--color-primary-light);
     box-shadow: var(--shadow-dark);
-  
+    
     &__side {
       position: relative;
       height: auto; 
       box-shadow: none;
-
-      // BAKC OF CARD GRADIENT COLOR
+      
+      &--front {
+        overflow: visible;
+      }
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
+        // -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+        // clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
       }
     }
-  
+    
     &:hover &__side--front {
       transform: rotateY(0deg);
     }
-
+    
     &__details {
-      padding: 1rem 3rem;
+      padding: 15rem 4rem 4rem 4rem;
+      width: 100%;
     }
   }
 }

@@ -324,20 +324,23 @@ h1 {
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
-      border-radius: 3px;
+      border-radius: 2rem;
       background-color: var(--color-primary-light);
       box-shadow: var(--shadow-dark); }
       .card__side {
         position: relative;
         height: auto;
         box-shadow: none; }
+        .card__side--front {
+          overflow: visible; }
         .card__side--back {
           transform: rotateY(0deg);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%); }
       .card:hover .card__side--front {
         transform: rotateY(0deg); }
       .card__details {
-        padding: 1rem 3rem; } }
+        padding: 15rem 4rem 4rem 4rem;
+        width: 100%; } }
 
 .navigation__checkbox {
   display: none; }
