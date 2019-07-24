@@ -22,9 +22,10 @@
   }
   @include respond(phone) { // width LESS THAN 600 px?
     padding: 0;
+    padding-top: 7rem;
   }
-  @include respond(desktop) { // width GREATER THAN 1200px?
-    padding: 12.5rem;
+  @include respond(desktop) { // width GREATER THAN 1200 px?
+    padding: 13rem;
   }
 }
 
@@ -98,7 +99,7 @@
   text-align: left;
   
   display: grid;
-  grid-template-columns:  [info-start] 1fr [info-end];
+  grid-template-columns: [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
   justify-items: center;
 
@@ -122,6 +123,14 @@
   height: 50rem;
   width: 100%;
   max-width: 90rem;
+
+  @include respond(tab-land) { // width 900 - 1200 px?
+    height: 55rem; 
+  }
+
+  @include respond(phone) { // width LESS THAN 600 px?
+    width: 40rem; 
+  }
   
   &__side {
     background-color: var(--color-primary-light);
@@ -136,11 +145,19 @@
     box-shadow: var(--shadow-dark);
     overflow: hidden;
 
+    @include respond(tab-land) { // width 900 - 1200 px?
+      height: 55rem; 
+    }
+
+    @include respond(phone) { // width LESS THAN 600 px?
+      width: 40rem; 
+    }
+
     &--front {
       background-color: var(--color-primary-light);
     }
     &--back {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark) );
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
       transform: rotateY(180deg);
     }
   }
@@ -221,9 +238,23 @@
     top: 20rem;
     right: 2rem;
     width: 45rem;
+    min-width: 30rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     background-image: linear-gradient(to right bottom, rgba(#2998ff, .85), rgba(#5643fa, .85));
+
+    @include respond(tab-land) { // width 900 - 1200 px?
+      width: 70%; 
+    }
+    @include respond(tab-port) { // width 600 - 900 px?
+      width: 45rem; 
+    }
+    @include respond(phone) { // width LESS THAN 600 px?
+      width: 35rem; 
+    }
+    @include respond(desktop) { // width GREATER THAN 1200 px?
+      width: 50rem;
+    }
   }
   // LOGOS
   &__logo {

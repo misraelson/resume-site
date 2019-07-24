@@ -70,7 +70,7 @@ html {
   }
 
   @include respond(phone) { // width LESS THAN 600 px?
-    font-size: 45%;
+    font-size: 40%;
   }
 
   @include respond(desktop) { // width GREATER THAN 1200px?
