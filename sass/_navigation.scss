@@ -54,10 +54,11 @@
     top: 0;
     left: 0;
     z-index: 1500;
-
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    visibility: hidden;
+    
+    transition: all .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__header {
@@ -76,8 +77,8 @@
   }
 
   &__link {
-    &:link,
-    &:visited {
+
+    &:link, &:visited {
       display: inline-block;
       font-size: 3rem;
       font-weight: 300;
@@ -89,10 +90,10 @@
       background-size: 250%;
       transition: all .4s;
     }
-    &:hover,
-    &:active {
+
+    &:hover, &:active {
       background-position: 100%;
-      color: var(--color-primary);
+      color: var(--color-secondary-dark);
       transform: translateX(1rem);
     }
   }
@@ -101,11 +102,14 @@
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
-
+  
   &__checkbox:checked ~ &__nav {
+    visibility: visible; 
     opacity: 1;
-    width: 100%;
+    width: 100%;    
   }
+
+ 
 
   // BURGER ICON
   &__icon {

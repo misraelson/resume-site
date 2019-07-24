@@ -19,19 +19,20 @@
 // 1em = 16px
 // 600px = 37.5em
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  
+  @if $breakpoint == phone { // width LESS THAN 600 px?
     @media only screen and (max-width: 37.5em) { @content };
   }
 
-  @if $breakpoint == tab-port {
-    @media only screen and (min-width: 56.25em) { @content };
+  @if $breakpoint == tab-port { // width LESS THAN 900?
+    @media only screen and (max-width: 56.25em) { @content };
   }
-
-  @if $breakpoint == tab-land {
-    @media only screen and (min-width: 75em) { @content };  
+  
+  @if $breakpoint == tab-land { // width LESS THAN 1200?
+    @media only screen and (max-width: 75em) { @content };  
   }
-
-  @if $breakpoint == desktop {
+  
+  @if $breakpoint == desktop {  // width GREATER THAN 1200?
     @media only screen and (min-width: 112.5em) { @content };
   }
 } 

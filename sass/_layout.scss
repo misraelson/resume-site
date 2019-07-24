@@ -2,7 +2,7 @@
   height: 100%;
   font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  // padding: 2rem;
 
   display: grid;
   // grid-template-rows: repeat(3, [row-start] minmax(1fr, auto-fill) [row-end]);
@@ -14,15 +14,14 @@
     // padding: 1rem;
   }
 
-
+  @include respond(phone) {
+    padding: 0;
+  }
   @include respond(tab-port) {
-    padding: 4rem
+    padding: 5rem
   }
   @include respond(tab-land) {
     padding: 10rem
-  }
-  @include respond(phone) {
-    padding: 0;
   }
   @include respond(desktop) {
     padding: 15rem
