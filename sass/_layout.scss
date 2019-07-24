@@ -2,7 +2,7 @@
   height: 100%;
   font-size: 2rem;
   text-align: center;
-  // padding: 2rem;
+  padding: 15rem;
 
   display: grid;
   // grid-template-rows: repeat(3, [row-start] minmax(1fr, auto-fill) [row-end]);
@@ -14,17 +14,17 @@
     // padding: 1rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-land) { // width LESS THAN 1200 px?
+    padding: 10rem;
+  }
+  @include respond(tab-port) { // width LESS THAN 900 px?
+    padding: 5rem;
+  }
+  @include respond(phone) { // width LESS THAN 600 px?
     padding: 0;
   }
-  @include respond(tab-port) {
-    padding: 5rem
-  }
-  @include respond(tab-land) {
-    padding: 10rem
-  }
-  @include respond(desktop) {
-    padding: 15rem
+  @include respond(desktop) { // width GREATER THAN 1200px?
+    padding: 12.5rem;
   }
 }
 

@@ -72,18 +72,18 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 45%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 80%; } }
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 60%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -104,22 +104,23 @@ h1 {
   height: 100%;
   font-size: 2rem;
   text-align: center;
+  padding: 15rem;
   display: grid;
   grid-template-rows: auto 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
-  @media only screen and (max-width: 37.5em) {
-    .container {
-      padding: 0; } }
-  @media only screen and (max-width: 56.25em) {
-    .container {
-      padding: 5rem; } }
   @media only screen and (max-width: 75em) {
     .container {
       padding: 10rem; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 56.25em) {
     .container {
-      padding: 15rem; } }
+      padding: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 0; } }
+  @media only screen and (min-width: 75em) {
+    .container {
+      padding: 12.5rem; } }
 
 .header {
   grid-area: head;
