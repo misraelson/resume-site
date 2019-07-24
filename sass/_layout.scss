@@ -14,11 +14,18 @@
     // padding: 1rem;
   }
 
+
   @include respond(tab-port) {
-    padding: 1rem
+    padding: 4rem
+  }
+  @include respond(tab-land) {
+    padding: 10rem
   }
   @include respond(phone) {
     padding: 0;
+  }
+  @include respond(desktop) {
+    padding: 15rem
   }
 }
 
@@ -57,6 +64,7 @@
     height: 20rem;
     border-radius: 50%;
     background-color: lightskyblue;
+    box-shadow: var(--shadow-dark);
     z-index: 2;
     
     // center the text
@@ -73,7 +81,7 @@
       background-size: cover;
       // background-blend-mode: multiply;
       background-blend-mode: overlay;
-      background-image:  linear-gradient(to right bottom, rgba(#7350F2, .9), rgba(#25B8F6, .9)), url(../resources/profile-1.jpg);
+      background-image:  linear-gradient(to right bottom, rgba(#7350F2, .9), rgba(#25B8F6, .9)), url(../resources/nat-9.jpg);
     }
   }
 }
@@ -89,7 +97,11 @@
   display: grid;
   grid-template-columns:  [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
-  justify-content: center;
+  justify-items: center;
+
+  h1 {
+    width: 100%;
+  }
 
   @include respond(tab-port) {
     padding: 15rem 5rem 5rem 5rem;
@@ -105,6 +117,8 @@
   -moz-perspective: 150rem;
   position:  relative;
   height: 50rem;
+  width: 100%;
+  max-width: 90rem;
   
   &__side {
     background-color: var(--color-primary-light);

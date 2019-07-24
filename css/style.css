@@ -72,12 +72,15 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -103,12 +106,18 @@ h1 {
   grid-template-rows: auto 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     .container {
-      padding: 1rem; } }
+      padding: 4rem; } }
+  @media only screen and (min-width: 75em) {
+    .container {
+      padding: 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .container {
       padding: 0; } }
+  @media only screen and (min-width: 112.5em) {
+    .container {
+      padding: 15rem; } }
 
 .header {
   grid-area: head;
@@ -137,6 +146,7 @@ h1 {
     height: 20rem;
     border-radius: 50%;
     background-color: lightskyblue;
+    box-shadow: var(--shadow-dark);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -148,7 +158,7 @@ h1 {
       border-radius: 50%;
       background-size: cover;
       background-blend-mode: overlay;
-      background-image: linear-gradient(to right bottom, rgba(115, 80, 242, 0.9), rgba(37, 184, 246, 0.9)), url(../resources/profile-1.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(115, 80, 242, 0.9), rgba(37, 184, 246, 0.9)), url(../resources/nat-9.jpg); }
 
 .info {
   grid-row: 3 / -1;
@@ -160,8 +170,10 @@ h1 {
   display: grid;
   grid-template-columns: [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
-  justify-content: center; }
-  @media only screen and (max-width: 56.25em) {
+  justify-items: center; }
+  .info h1 {
+    width: 100%; }
+  @media only screen and (min-width: 56.25em) {
     .info {
       padding: 15rem 5rem 5rem 5rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -172,7 +184,9 @@ h1 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  width: 100%;
+  max-width: 90rem; }
   .card__side {
     background-color: var(--color-primary-light);
     border-radius: 2rem;
@@ -381,7 +395,7 @@ h1 {
   box-shadow: var(--shadow-dark);
   text-align: center;
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
@@ -400,7 +414,7 @@ h1 {
   background-image: radial-gradient(orangered, var(--color-secondary-dark));
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
