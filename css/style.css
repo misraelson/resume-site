@@ -103,6 +103,12 @@ h1 {
   grid-template-rows: auto 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      padding: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 0; } }
 
 .header {
   grid-area: head;
@@ -141,8 +147,8 @@ h1 {
       height: 18rem;
       border-radius: 50%;
       background-size: cover;
-      background-blend-mode: multiply;
-      background-image: linear-gradient(to right bottom, var(--color-primary-dark), var(--color-primary-light)), url(../resources/nat-9.jpg); }
+      background-blend-mode: overlay;
+      background-image: linear-gradient(to right bottom, rgba(115, 80, 242, 0.9), rgba(37, 184, 246, 0.9)), url(../resources/profile-1.jpg); }
 
 .info {
   grid-row: 3 / -1;
@@ -155,6 +161,12 @@ h1 {
   grid-template-columns: [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
   justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .info {
+      padding: 15rem 5rem 5rem 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .info {
+      padding: 15rem 1rem 1rem 1rem; } }
 
 .card {
   perspective: 150rem;
@@ -240,7 +252,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1.5rem;
-    align-self: end; }
+    align-self: flex-end; }
     .card__logo--1 {
       background-image: url(../resources/woodseer_white.png);
       height: 5rem;
@@ -308,7 +320,7 @@ h1 {
         padding: 1rem; }
   .card__skills {
     display: grid;
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
     padding: 3rem;
     grid-row-gap: 2rem;
     text-align: left; }
@@ -332,21 +344,33 @@ h1 {
         height: auto;
         box-shadow: none; }
         .card__side--front {
-          overflow: visible; }
+          overflow: visible;
+          z-index: 1; }
         .card__side--back {
           transform: rotateY(0deg);
-          clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%); }
+          margin-top: 5rem;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0; }
+      .card__picture {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem; }
       .card:hover .card__side--front {
         transform: rotateY(0deg); }
+      .card__heading {
+        z-index: 100; }
       .card__details {
-        padding: 15rem 4rem 4rem 4rem;
+        padding: 2rem 1rem 2rem 1rem;
+        width: 100%; }
+      .card__skills {
+        padding: 2rem 2rem 2rem 2rem;
+        margin: 1rem;
         width: 100%; } }
 
 .navigation__checkbox {
   display: none; }
 
 .navigation__button {
-  background-color: white;
+  background-color: antiquewhite;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -354,6 +378,7 @@ h1 {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
+  box-shadow: var(--shadow-dark);
   text-align: center;
   cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
@@ -366,22 +391,23 @@ h1 {
       right: 3rem; } }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 5.5rem;
+  right: 5.5rem;
+  background-image: radial-gradient(orangered, var(--color-secondary-dark));
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
-      right: 4.5rem; } }
+      top: 3.5rem;
+      right: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3rem;
-      right: 3rem; } }
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -393,7 +419,14 @@ h1 {
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
+.navigation__header {
+  padding: 10rem 7rem 7rem 7rem; }
+
 .navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
   width: 100%; }
@@ -406,13 +439,16 @@ h1 {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
+  color: var(--color-grey-light-1);
   text-decoration: none;
   text-transform: uppercase;
-  background-size: 230%;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-grey-light-1) 50%);
+  background-size: 250%;
   transition: all .4s; }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
+  color: var(--color-primary);
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -428,6 +464,7 @@ h1 {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
+    background-color: var(--color-grey-dark-3);
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";

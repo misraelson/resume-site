@@ -13,6 +13,13 @@
   & > * {
     // padding: 1rem;
   }
+
+  @include respond(tab-port) {
+    padding: 1rem
+  }
+  @include respond(phone) {
+    padding: 0;
+  }
 }
 
 
@@ -64,8 +71,9 @@
       height: 18rem;
       border-radius: 50%;
       background-size: cover;
-      background-blend-mode: multiply;
-      background-image:  linear-gradient(to right bottom, var(--color-primary-dark), var(--color-primary-light)), url(../resources/nat-9.jpg);
+      // background-blend-mode: multiply;
+      background-blend-mode: overlay;
+      background-image:  linear-gradient(to right bottom, rgba(#7350F2, .9), rgba(#25B8F6, .9)), url(../resources/profile-1.jpg);
     }
   }
 }
@@ -83,6 +91,12 @@
   grid-gap: 3.5rem;
   justify-content: center;
 
+  @include respond(tab-port) {
+    padding: 15rem 5rem 5rem 5rem;
+  }
+  @include respond(phone) {
+    padding: 15rem 1rem 1rem 1rem;
+  }
 }
 
 // Card flip functionality
@@ -199,7 +213,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1.5rem;
-    align-self: end;
+    align-self: flex-end;
     // MUST ASSUME code is ACCESS FROM STYLE.CSS file => find url image directory from there
     // WOODSEER
     &--1 {
@@ -309,7 +323,7 @@
   // BACK OF SKILLS CARD
   &__skills {
     display: grid;
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
     padding: 3rem;
     grid-row-gap: 2rem;
     text-align: left;
@@ -344,40 +358,38 @@
       
       &--front {
         overflow: visible;
+        z-index: 1;
       }
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
-        // -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-        // clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+        margin-top: 5rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
       }
+    }
+
+    &__picture {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
     }
     
     &:hover &__side--front {
       transform: rotateY(0deg);
     }
+
+    &__heading {
+      z-index: 100;
+    }
     
     &__details {
-      padding: 15rem 4rem 4rem 4rem;
+      padding: 2rem 1rem 2rem 1rem;
+      width: 100%;
+    }
+
+    &__skills {
+      padding: 2rem 2rem 2rem 2rem;
+      margin: 1rem;
       width: 100%;
     }
   }
 }
-
-// MEDIA QUERIES
-// @media only screen and (max-width: $bp-largest) {
-//   margin: 0;
-//   max-width: 100%;
-// }
-
-
-// align-items: center; // STRETCH / center / end / start
-// justify-items: center;
-
-
-// ALIGN GRID TRACKS TO GRID CONTAINER
-
-// aligns grid tracks in the HORIZANTAL or ROW DIRECTION
-// justify-content: center;
-// aligns grid tracks in the VERTICAL or COLUMN DIRECTION
-// align-content: center;
