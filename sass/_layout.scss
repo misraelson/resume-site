@@ -37,6 +37,10 @@
   grid-row: 1 / 2;
 
   background-color: transparent;
+
+  &__name {
+    font-size: 6rem;
+  }
 }
   
 .circle-cutout {

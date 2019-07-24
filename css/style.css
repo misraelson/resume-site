@@ -129,6 +129,8 @@ h1 {
   grid-column: grid-start / grid-end;
   grid-row: 1 / 2;
   background-color: transparent; }
+  .header__name {
+    font-size: 6rem; }
 
 .circle-cutout {
   grid-row: 2 / 4;
@@ -404,8 +406,8 @@ h1 {
       right: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
+      top: 1.5rem;
+      right: 2rem; } }
 
 .navigation__background {
   height: 8rem;
@@ -423,8 +425,8 @@ h1 {
       right: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 2.5rem;
-      right: 2.5rem; } }
+      top: 1rem;
+      right: 1.5rem; } }
 
 .navigation__nav {
   height: 100vh;
