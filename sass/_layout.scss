@@ -95,7 +95,7 @@
       background-size: cover;
       // background-blend-mode: multiply;
       background-blend-mode: overlay;
-      background-image:  linear-gradient(to right bottom, rgba(#7350F2, .9), rgba(#25B8F6, .9)), url(../resources/nat-9.jpg);
+      background-image:  linear-gradient(to right bottom, rgba(#7350F2, .9), rgba(#25B8F6, .9)), url(../resources/mobile-optimized/nat-9-small-2000.jpg);
     }
   }
 }
@@ -201,48 +201,48 @@
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
 
     &--1 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-1-small-1000.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-1-small.jpg);
     }
     &--2 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/coding-1-small-7952.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/coding-1-small.jpg);
     }
     &--3 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-2-small-1000.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-2-small.jpg) center;
       background-size: cover;
     }
     &--4 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/bucha-1-small-5996.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/bucha-1-small.jpg);
     }
     &--5 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-2-small-5184.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-2-small.jpg) center;
       background-size: cover;
     }
     &--6 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-1-small-8688.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-1-small.jpg) center;
       background-size: cover;
     }
     &--7 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/moving-1-small-4927.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/moving-1-small.jpg) center;
       background-size: cover;
     }
     &--8 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/breath-1-small-4000.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/breath-1-small.jpg) center;
       background-size: cover;
     }
     &--9 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/circle-1-small-6016.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/circle-1-small.jpg) center;
       background-size: cover;
     }
     &--10 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/learning-1-small-7360.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/learning-1-small.jpg) center;
       background-size: cover;
     }
     &--11 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/skills-small-1400.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/skills-small.jpg) center;
       background-size: cover;
     }
     &--12 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/volunteer-small-5472.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/volunteer-small.jpg) center;
       background-size: cover;
     }
   }
