@@ -192,7 +192,7 @@
     transform: rotateY(0);
   }
 
-  // =========> FRONT CARD STYLING
+  // ============> FRONT CARD STYLING
   &__picture {
     background-size: cover;
     height: 38rem;
@@ -201,48 +201,48 @@
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
 
     &--1 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-1-large.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-1-small-1000.jpg);
     }
     &--2 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/coding-1.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/coding-1-small-7952.jpg);
     }
     &--3 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/nat-2-large.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-2-small-1000.jpg) center;
       background-size: cover;
     }
     &--4 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/bucha-1.jpg);
+      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/bucha-1-small-5996.jpg);
     }
     &--5 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-2.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-2-small-5184.jpg) center;
       background-size: cover;
     }
     &--6 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/lab-1.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/lab-1-small-8688.jpg) center;
       background-size: cover;
     }
     &--7 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/moving-1.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/moving-1-small-4927.jpg) center;
       background-size: cover;
     }
     &--8 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/breath-1.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/breath-1-small-4000.jpg) center;
       background-size: cover;
     }
     &--9 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/circle-1.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/circle-1-small-6016.jpg) center;
       background-size: cover;
     }
     &--10 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/learning-1.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/learning-1-small-7360.jpg) center;
       background-size: cover;
     }
     &--11 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/skills.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/skills-small-1400.jpg) center;
       background-size: cover;
     }
     &--12 {
-      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/volunteer.jpg) center;
+      background:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/volunteer-small-5472.jpg) center;
       background-size: cover;
     }
   }
@@ -288,7 +288,7 @@
     // MUST ASSUME code is ACCESS FROM STYLE.CSS file => find url image directory from there
     // WOODSEER
     &--1 {
-      background-image: url(../resources/woodseer_white.png);
+      background-image: url(../resources/mobile-optimized/woodseer_white-small-202.png);
       height: 5rem;
       width: 20rem;
     }
@@ -301,7 +301,7 @@
     }
     // REDLINE
     &--3 {
-      background-image: url(../resources/redline-logo.png);
+      background-image: url(../resources/mobile-optimized/redline-logo-small-600.png);
       height: 8rem;
       width: 13.5rem;
     }
@@ -313,14 +313,14 @@
     }
     // RISE
     &--5 {
-      background-image: url(../resources/rise-2.png);
+      background-image: url(../resources/mobile-optimized/rise-2-small-200.png);
       height: 8rem;
       width: 8rem;
       border-radius: 1.2rem;
     }
     // SHMOOVER
     &--7 {
-      background-image: url(../resources/shmoover-1-logo.jpg);
+      background-image: url(../resources/mobile-optimized/shmoover-1-logo-small-960.jpg);
       background-size: cover;
       height: 8rem;
       width: 13.4rem;
@@ -328,7 +328,7 @@
     }
     // BREATHE
     &--8 {
-      background-image: url(../resources/just-breathing-logo.png);
+      background-image: url(../resources/mobile-optimized/just-breathing-logo-small-600.png);
       height: 8rem;
       width: 8rem;
       border-radius: 1.2rem;
@@ -348,15 +348,15 @@
     }
     // RUBY
     &--11 {
-      background-image: url(../resources/ruby-logo.png);
+      background-image: url(../resources/mobile-optimized/ruby-logo-small-600.png);
     }
     // RAILS
     &--12 {
-      background-image: url(../resources/rails-logo.png);
+      background-image: url(../resources/mobile-optimized/rails-logo-small-600.png);
     }
     // REACT
     &--13 {
-      background-image: url(../resources/react-logo.png);
+      background-image: url(../resources/mobile-optimized/react-logo-small-300.png);
     }
     // JAVASCRIPT
     &--14 {
@@ -372,7 +372,7 @@
     }
     // ONE YOGA 
     &--17 {
-      background-image: url(../resources/oneyoga-logo.jpg);
+      background-image: url(../resources/mobile-optimized/oneyoga-logo-small-450.jpg);
     }
   }
 
