@@ -16,13 +16,10 @@
     <div class="navigation">
       <!-- hidden checkbox -->
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
-
       <div class="navigation__background">&nbsp;</div>
-
       <!-- HUGE ELEMENT OCCUPYING ENTIRE VIEWPORT -->
       <nav class="navigation__nav">
         <div class="navigation__header">
@@ -36,11 +33,12 @@
         </ul>
       </nav>
     </div>
+
     <!-- MAIN SECTION -->
     <div class="container">
       <div class="header">
         <div class="header__name">Matthew Israelson</div>
-        <h3>Full-stack Ruby on Rails + React developer with a sprinkle of sound design on top</h3>
+        <div class="header__sub">Full-stack Ruby on Rails + React developer with a sprinkle of sound design on top</div>
       </div>
       <div class="circle-cutout">
         <div class="circle-cutout__photo">
@@ -49,9 +47,47 @@
         </div>
       </div>
 
-      <section class="info">
-
-        <h1>Development Experience</h1>
+      <section class="main">
+        <!-- TECHNICAL SKILLS -->
+        <h1>Technical Skillset</h1>
+        <div class="hover">&darr; Hover Over The Cards &darr;</div>
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--11"></div>
+            <div class="card__heading">
+              Web Technologies + Frameworks
+              <h2>Full-Stack Development + Deployment</h2>
+              <div class="card__logo card__logo--box">
+                <div class="card__logo card__logo--img card__logo--11"></div>
+                <div class="card__logo card__logo--img card__logo--12"></div>
+                <div class="card__logo card__logo--img card__logo--13"></div>
+                <div class="card__logo card__logo--img card__logo--14"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__side card__side--back">
+            <div class="card__skills">
+              <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+                <li>Ruby on Rails / API Architecture</li>
+                <li>React JS</li>
+                <li>React Native</li>
+              </ul>
+              <ul>
+                <li>PostgreSQL with ActiveRecord</li>
+                <li>Sidekiq + Redis with ActiveJob</li>
+                <li>RSPEC + Cucumber Integration Testing</li>
+                <li>AWS CLI, EC2, Elastic Beanstalk + Deployment on AWS</li>
+                <li>SSL Certification for HTTPS Security</li>
+                <li>Heroku CLI + Deployment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <h1>Professional Experience</h1>
         <!-- WOODSEER -->
         <div class="card">
           <div class="card__side card__side--front">
@@ -64,7 +100,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Built out new design specs for client-facing landing page that could display live data pulled from Rails backend</li>
                 <li>Expanded test coverage for main dividend forecasting algorithm in RSPEC</li>
@@ -91,7 +127,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Expand students knowledge of JavaScript, React, Rails, NodeJS and SQL</li>
                 <li>Guide students through coding challenges and homework assignments</li>
@@ -118,7 +154,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Complete overhaul and redesign of old (circa 2007) era company site</li>
                 <li>Mobile-ready, full-size auto-play video background on splash landing section</li>
@@ -145,7 +181,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Full-stack shopify design and development</li>
             <li>Wrote Liquid code to create an order form for wholesale and retail clients</li>
@@ -172,7 +208,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Responisble for data entry and tracking of key metrics related to Kombucha microbial health and wellness</li>
                 <li>Oversaw 3x growth in production capacity as we moved to a new production facility</li>
@@ -196,7 +232,7 @@
           </div>
           <div class="card__side card__side--back">
             <div class="card__details">
-              <h2>Primary Directives</h2>
+              <h2>Contributions</h2>
               <ul>
                 <li>Oversaw process of purification of pharmaceutical product intended for Stage 3 (human) clinical trials</li>
                 <li>Responisble for training new employees on homogenization process + proper machine maintenance</li>
@@ -302,82 +338,46 @@
           <div class="card__side card__side--back">
             <div class="card__skills">
               <h3>University of Alberta <br> 2008</h3>
-              B. Science - Microbiology + Analytical Chemistry
+              <h4>B. Science - Microbiology + Analytical Chemistry</h4>
               <h3>CodeCore Bootcamp <br> 2016</h3>
-              12-Week Full-stack Web Development Certificate
+              <h4>12-Week Full-stack Web Development Certificate</h4>
               <h3>Udemy <br> 2018</h3>
-              Dissecting Ruby on Rails 5 Certificate of Completion
+              <h4>Dissecting Ruby on Rails 5 Certificate of Completion</h4>
               <h3>Udemy <br> 2019</h3>
-              Advanced Front-End Design CSS + SASS Certificate of Completion
+              <h4>Advanced Front-End Design CSS + SASS Certificate of Completion</h4>
               <h3>Udemy  <br> 2019 - In Progress</h3>
-              Complete React Developer Course
+              <h4>Complete React Developer Course</h4>
             </div>
           </div>
         </div>        
-        <!-- SKILLS -->
-        <h1>Technical Skillset</h1>
+       
+        <!-- VOLUNTEER -->
+        <h1>Volunteer + Hobbies</h1>
         <div class="card">
           <div class="card__side card__side--front">
-            <div class="card__picture card__picture--11"></div>
+            <div class="card__picture card__picture--12"></div>
             <div class="card__heading">
-              Web Technologies + Frameworks
-              <h2>Full-Stack Development + Deployment</h2>
+              Community Organizations
+              <h2>Activities</h2>
               <div class="card__logo card__logo--box">
-                <div class="card__logo card__logo--img card__logo--11"></div>
-                <div class="card__logo card__logo--img card__logo--12"></div>
-                <div class="card__logo card__logo--img card__logo--13"></div>
-                <div class="card__logo card__logo--img card__logo--14"></div>
+                <div class="card__logo card__logo--img card__logo--16"></div>
+                <div class="card__logo card__logo--img card__logo--17"></div>
+                <div class="card__logo card__logo--img card__logo--15"></div>
               </div>
             </div>
           </div>
           <div class="card__side card__side--back">
-            <div class="card__skills">
-              <ul>
-                <li>HTML5, CSS3</li>
-                <li>JavaScript</li>
-                <li>Ruby</li>
-                <li>Ruby on Rails / API Architecture</li>
-                <li>React JS</li>
-                <li>React Native</li>
-              </ul>
-              <ul>
-                <li>PostgreSQL with ActiveRecord</li>
-                <li>Sidekiq + Redis with ActiveJob</li>
-                <li>RSPEC + Cucumber Integration Testing</li>
-                <li>AWS CLI, EC2, Elastic Beanstalk + Deployment on AWS</li>
-                <li>SSL Certification for HTTPS Security</li>
-                <li>Heroku CLI + Deployment</li>
-              </ul>
+            <div class="card__skills">  
+              <h3>Mercy Ships Medical Aid <br> 2004</h3>
+              <h4>6 month health-care outreach in Sierra Leone</h4>
+              <h3>One Yoga For The People <br> 2017-2019</h3>
+              <h4>2+ years experience</h4>
+              <h3>Music Production <br> 2009-Present</h3>
+              <h4>Proficient in Ableton Live Mixing + Sound Design</h4>
             </div>
           </div>
         </div>
-          
-          <h1>Hobbies + Volunteer</h1>
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--12"></div>
-              <div class="card__heading">
-                Community Organizations
-                <h2>Activities</h2>
-                <div class="card__logo card__logo--box">
-                  <div class="card__logo card__logo--img card__logo--16"></div>
-                  <div class="card__logo card__logo--img card__logo--17"></div>
-                  <div class="card__logo card__logo--img card__logo--15"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__side card__side--back">
-              <div class="card__skills">  
-                <h3>Mercy Ships Medical Aid <br> 2004</h3>
-                6 month overseas health-care outreach in Sierra Leone
-                <h3>One Yoga For The People <br> 2017-2019</h3>
-                2+ years volunteer experience as keyholder and new client success manager
-                <h3>Music Production <br> 2009-Present</h3>
-                Proficient in Ableton Live 9 Mixing Sound Production
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
       </section>
     </div>
