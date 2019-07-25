@@ -288,7 +288,7 @@ h1 {
       background-size: cover; }
     @media only screen and (max-width: 37.5em) {
       .card__picture--1 {
-        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg); }
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/nat-1-small-600.jpg); }
       .card__picture--2 {
         background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg); }
       .card__picture--3 {

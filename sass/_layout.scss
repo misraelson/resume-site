@@ -248,7 +248,7 @@
 
     @include respond(phone) { // width LESS THAN 600 px?
       &--1 {
-      background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg);
+      background-image:  linear-gradient(to right bottom, rgba(#2998ff, .6), rgba(#5643fa, .6)), url(../resources/phone/nat-1-small-600.jpg);
     }
     &--2 {
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg);
