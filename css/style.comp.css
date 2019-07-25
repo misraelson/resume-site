@@ -286,6 +286,40 @@ h1 {
     .card__picture--12 {
       background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/volunteer-small.jpg) center;
       background-size: cover; }
+    @media only screen and (max-width: 37.5em) {
+      .card__picture--1 {
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg); }
+      .card__picture--2 {
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg); }
+      .card__picture--3 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-2-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--4 {
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/bucha-1-small-600.jpg); }
+      .card__picture--5 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/lab-2-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--6 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/lab-1-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--7 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/moving-1-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--8 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/breath-1-small-400.jpg) center;
+        background-size: cover; }
+      .card__picture--9 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/circle-1-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--10 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/learning-1-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--11 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/skills-small-600.jpg) center;
+        background-size: cover; }
+      .card__picture--12 {
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/volunteer-small-600.jpg) center;
+        background-size: cover; } }
   .card__heading {
     display: flex;
     flex-direction: column;
