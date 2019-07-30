@@ -44,11 +44,11 @@
   background-blend-mode: soft-light;
   background-image:  linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/mobile-optimized/matt-profile-big.jpg);
 
-  // @include respond(phone) { // width LESS THAN 600 px?
-  //   padding-top: 3rem;
-  //   background:  linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg) center;
-  //   background-size: cover;
-  // }
+  @include respond(phone) { // width LESS THAN 600 px?
+    padding-top: 3rem;
+    background:  linear-gradient(to right bottom,#FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg) center;
+    background-size: cover;
+  }
 
   &__name {
     font-size: 6rem;

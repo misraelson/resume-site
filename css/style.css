@@ -125,6 +125,11 @@ h1 {
   background-size: cover;
   background-blend-mode: soft-light;
   background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/mobile-optimized/matt-profile-big.jpg); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding-top: 3rem;
+      background: linear-gradient(to right bottom, #FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg) center;
+      background-size: cover; } }
   .header__name {
     font-size: 6rem;
     color: var(--color-grey-dark-1);
