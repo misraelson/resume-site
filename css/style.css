@@ -63,7 +63,7 @@ Grey dark 3: #999
   --color-grey-dark-3:  #999;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
-  --line: 1px solid var(--color-grey-dark-1); }
+  --line: 1px solid var(--color-grey-dark-); }
 
 * {
   margin: 0;
@@ -128,7 +128,7 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .header {
       padding-top: 3rem;
-      background-image: linear-gradient(to right bottom, #FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg);
+      background: linear-gradient(to right bottom, #FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg) center;
       background-size: cover; } }
   .header__name {
     font-size: 6rem;
@@ -297,7 +297,7 @@ h1 {
       background-size: cover; }
     @media only screen and (max-width: 37.5em) {
       .card__picture--1 {
-        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg); }
+        background-image: linear-gradient(to right bottom, #efb8a6, #895b4b), url(../resources/phone/nat-1-small-600.jpg); }
       .card__picture--2 {
         background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg); }
       .card__picture--3 {

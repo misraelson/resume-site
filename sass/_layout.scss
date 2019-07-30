@@ -46,7 +46,7 @@
 
   @include respond(phone) { // width LESS THAN 600 px?
     padding-top: 3rem;
-    background-image:  linear-gradient(to right bottom,#FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg);
+    background:  linear-gradient(to right bottom,#FF9671, #ffc8a0), url(../resources/phone/matt-profile-small.jpg) center;
     background-size: cover;
   }
 
@@ -272,7 +272,7 @@
 
     @include respond(phone) { // width LESS THAN 600 px?
       &--1 {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg);
+      background-image: linear-gradient(to right bottom, #efb8a6, #895b4b), url(../resources/phone/nat-1-small-600.jpg);
       }
       &--2 {
         background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg);
