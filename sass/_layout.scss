@@ -46,7 +46,8 @@
 
   @include respond(phone) { // width LESS THAN 600 px?
     padding-top: 3rem;
-    background-image:  linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg);
+    background:  linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg) center;
+    background-size: cover;
   }
 
   &__name {
@@ -179,7 +180,6 @@
   }
   
   &__side {
-    // background-color: var(--color-primary-light);
     border-radius: 2rem;
     height: 50rem;
     transition: all 1s ease;
@@ -203,7 +203,6 @@
       background-color: var(--color-primary-light);
     }
     &--back {
-      // background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
       background-color: var(--color-primary-light);
       transform: rotateY(180deg);
       color: var(--color-grey-dark-1);

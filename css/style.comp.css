@@ -128,7 +128,8 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .header {
       padding-top: 3rem;
-      background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg); } }
+      background: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg) center;
+      background-size: cover; } }
   .header__name {
     font-size: 6rem;
     color: var(--color-grey-dark-1);
