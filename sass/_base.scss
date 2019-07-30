@@ -22,17 +22,50 @@ Grey dark 3: #999
 
 :root {
   // PRIMARY COLORS
-  --color-primary: #3930D8;
-  --color-primary-light: #25B8F6;
-  --color-primary-dark: #7350F2;
-  --color-secondary-light: #2998ff;
-  --color-secondary-dark: #5643fa;
 
+  // // BACKGROUND COLOR
+  // --color-primary: #3930D8;
+  // // BEHIND CARDS
+  // --color-primary-light: #25B8F6;
+  // // CARD BACKGROUND
+  // --color-primary-dark: #7350F2;
+  // // COLORS FOR LINEAR GRADIENT
+  // --color-secondary-light: #2998ff;
+  // --color-secondary-dark: #5643fa;
+  
+  // COLORS LIGHT MODE
+  // BACKGROUND COLOR
+  // --color-primary: #FF9671;
+  // // BEHIND CARDS
+  // --color-primary-light: #FFC75F;
+  // // CARD BACKGROUND
+  // --color-primary-dark: #FF6F91;
+  // // COLORS FOR LINEAR GRADIENT
+  // --color-secondary-light: #845EC2;
+  // --color-secondary-dark: #2C73D2;
+
+  
+  
+  // COLORS FLOWER MODE
+  // BACKGROUND COLOR
+  --color-primary: #FF9671;
+  // BEHIND CARDS
+  --color-primary-dark: #c86745;
+  --color-primary-light: #ffc8a0;
+  // CARD BACKGROUND
+  // COLORS FOR LINEAR GRADIENT
+  --color-secondary: #bb8877;
+  --color-secondary-light: #efb8a6;
+  --color-secondary-dark: #895b4b;
+
+
+// TEXT COLORS
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #DDDFE7;
-  // TEXT COLORS
+
+// SHADOW COLORS
   --color-grey-dark-1:  #333;
   --color-grey-dark-2:  #777;
   --color-grey-dark-3:  #999;
@@ -40,7 +73,7 @@ Grey dark 3: #999
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
 
-  --line: 1px solid var(--color-grey-light-2);
+  --line: 1px solid var(--color-grey-dark-1);
 }
 
 $bp-largest: 75em;      // 1200px
@@ -86,9 +119,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-light-1);
-  // background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark));
-  background-color: var(--color-primary);
+  color: var(--color-grey-dark-1);
+  // background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary-dark));
+  background-color: var(--color-primary-dark);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
