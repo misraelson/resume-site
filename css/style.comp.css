@@ -48,11 +48,12 @@ Grey dark 3: #999
 // --color-primary-dark: #625EAC;
 */
 :root {
-  --color-primary: #3930D8;
-  --color-primary-light: #25B8F6;
-  --color-primary-dark: #7350F2;
-  --color-secondary-light: #2998ff;
-  --color-secondary-dark: #5643fa;
+  --color-primary: #FF9671;
+  --color-primary-dark: #c86745;
+  --color-primary-light: #ffc8a0;
+  --color-secondary: #bb8877;
+  --color-secondary-light: #efb8a6;
+  --color-secondary-dark: #895b4b;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -62,7 +63,7 @@ Grey dark 3: #999
   --color-grey-dark-3:  #999;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
-  --line: 1px solid var(--color-grey-light-2); }
+  --line: 1px solid var(--color-grey-dark-1); }
 
 * {
   margin: 0;
@@ -93,8 +94,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-light-1);
-  background-color: var(--color-primary);
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-primary-dark);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
@@ -108,42 +109,36 @@ h1 {
   height: 100%;
   font-size: 2rem;
   text-align: center;
-  padding: 15rem;
   display: grid;
-  grid-template-rows: auto 10rem 10rem auto;
+  grid-template-rows: 1fr 10rem 10rem auto;
   grid-template-columns: [grid-start] 1fr [grid-end];
   grid-gap: 2rem; }
-  @media only screen and (max-width: 75em) {
-    .container {
-      padding: 10rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .container {
-      padding: 5rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .container {
-      padding: 0;
-      padding-top: 7rem; } }
-  @media only screen and (min-width: 75em) {
-    .container {
-      padding: 13rem; } }
 
 .header {
   grid-area: head;
   justify-self: center;
   align-self: end;
   grid-column: grid-start / grid-end;
-  grid-row: 1 / 2;
-  background-color: transparent; }
+  grid-row: 1 / 3;
+  min-height: 70rem;
+  width: 100%;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/mobile-optimized/matt-profile-big.jpg); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding-top: 3rem;
+      background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg); } }
   .header__name {
     font-size: 6rem;
-    color: whitesmoke;
+    color: var(--color-grey-dark-1);
     border-bottom: var(--line);
     box-shadow: var(--shadow-dark); }
   .header__sub {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-grey-light-1);
+    color: #000;
     font-size: 3rem;
-    padding: 1rem; }
+    text-decoration-style: wavy;
+    padding-top: 1rem; }
 
 .circle-cutout {
   grid-row: 2 / 4;
@@ -154,7 +149,7 @@ h1 {
   width: 25rem;
   height: 25rem;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +158,7 @@ h1 {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background-color: lightskyblue;
+    background-color: var(--color-primary-light);
     box-shadow: var(--shadow-dark);
     z-index: 2;
     display: flex;
@@ -175,13 +170,13 @@ h1 {
       height: 18rem;
       border-radius: 50%;
       background-size: cover;
-      background-blend-mode: overlay;
-      background-image: linear-gradient(to right bottom, rgba(115, 80, 242, 0.9), rgba(37, 184, 246, 0.9)), url(../resources/mobile-optimized/nat-9-small-2000.jpg); }
+      background-blend-mode: multiply;
+      background-image: linear-gradient(to right bottom, rgba(239, 184, 166, 0.8), rgba(137, 91, 75, 0.8)), url(../resources/mobile-optimized/tree-pose-large.jpg); }
 
 .main {
   grid-row: 3 / -1;
   grid-column: grid-start / grid-end;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
   padding: 15rem 5rem 5rem 5rem;
   border-radius: 8px;
   text-align: left;
@@ -189,6 +184,19 @@ h1 {
   grid-template-columns: [info-start] 1fr [info-end];
   grid-gap: 3.5rem;
   justify-items: center; }
+  @media only screen and (max-width: 75em) {
+    .main {
+      margin: 0 10rem 10rem 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .main {
+      margin: 0 5rem 5rem 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      margin: 0;
+      margin-top: 7rem; } }
+  @media only screen and (min-width: 75em) {
+    .main {
+      margin: 0 13rem 13rem 13rem; } }
   .main h1 {
     width: 100%; }
   .main .hover {
@@ -221,7 +229,6 @@ h1 {
     .card {
       width: 40rem; } }
   .card__side {
-    background-color: var(--color-primary-light);
     border-radius: 2rem;
     height: 50rem;
     transition: all 1s ease;
@@ -241,8 +248,9 @@ h1 {
     .card__side--front {
       background-color: var(--color-primary-light); }
     .card__side--back {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
-      transform: rotateY(180deg); }
+      background-color: var(--color-primary-light);
+      transform: rotateY(180deg);
+      color: var(--color-grey-dark-1); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -288,37 +296,37 @@ h1 {
       background-size: cover; }
     @media only screen and (max-width: 37.5em) {
       .card__picture--1 {
-        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/nat-1-small-600.jpg); }
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-1-small-600.jpg); }
       .card__picture--2 {
-        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/coding-1-small-600.jpg); }
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/coding-1-small-600.jpg); }
       .card__picture--3 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/nat-2-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/nat-2-small-600.jpg) center;
         background-size: cover; }
       .card__picture--4 {
-        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/bucha-1-small-600.jpg); }
+        background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/bucha-1-small-600.jpg); }
       .card__picture--5 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/lab-2-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/lab-2-small-600.jpg) center;
         background-size: cover; }
       .card__picture--6 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/lab-1-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/lab-1-small-600.jpg) center;
         background-size: cover; }
       .card__picture--7 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/moving-1-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/moving-1-small-600.jpg) center;
         background-size: cover; }
       .card__picture--8 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/breath-1-small-400.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/breath-1-small-400.jpg) center;
         background-size: cover; }
       .card__picture--9 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/circle-1-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/circle-1-small-600.jpg) center;
         background-size: cover; }
       .card__picture--10 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/learning-1-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/learning-1-small-600.jpg) center;
         background-size: cover; }
       .card__picture--11 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/skills-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/skills-small-600.jpg) center;
         background-size: cover; }
       .card__picture--12 {
-        background: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../resources/phone/volunteer-small-600.jpg) center;
+        background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/phone/volunteer-small-600.jpg) center;
         background-size: cover; } }
   .card__heading {
     display: flex;
@@ -327,6 +335,7 @@ h1 {
     font-weight: 200;
     text-transform: uppercase;
     text-align: right;
+    color: var(--color-grey-light-1);
     padding: 1.5rem;
     position: absolute;
     top: 20rem;
@@ -335,7 +344,7 @@ h1 {
     min-width: 30rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    background-image: linear-gradient(to right bottom, rgba(239, 184, 166, 0.75), rgba(137, 91, 75, 0.75)); }
     @media only screen and (max-width: 75em) {
       .card__heading {
         width: 70%; } }
@@ -507,7 +516,7 @@ h1 {
   position: fixed;
   top: 5.5rem;
   right: 5.5rem;
-  background-image: radial-gradient(orangered, var(--color-secondary-dark));
+  background-image: radial-gradient(var(--color-secondary-light), var(--color-primary-dark));
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {

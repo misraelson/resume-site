@@ -124,12 +124,16 @@ h1 {
   width: 100%;
   background-size: cover;
   background-blend-mode: soft-light;
-  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/mobile-optimized/profile-1-small-724.jpg); }
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/mobile-optimized/matt-profile-big.jpg); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding-top: 3rem;
+      background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light)), url(../resources/phone/matt-profile-small.jpg); } }
   .header__name {
     font-size: 6rem;
     color: var(--color-grey-dark-1);
     border-bottom: var(--line);
-    box-shadow: var(--shadow-light); }
+    box-shadow: var(--shadow-dark); }
   .header__sub {
     color: #000;
     font-size: 3rem;
@@ -167,7 +171,7 @@ h1 {
       border-radius: 50%;
       background-size: cover;
       background-blend-mode: multiply;
-      background-image: linear-gradient(to right bottom, rgba(239, 184, 166, 0.9), rgba(137, 91, 75, 0.9)), url(../resources/mobile-optimized/nat-9-small-2000.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(239, 184, 166, 0.8), rgba(137, 91, 75, 0.8)), url(../resources/mobile-optimized/tree-pose-large.jpg); }
 
 .main {
   grid-row: 3 / -1;
