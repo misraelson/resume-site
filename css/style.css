@@ -262,10 +262,26 @@ h1 {
     background-blend-mode: multiply;
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0); }
+    .card__picture--joist {
+      background-image: linear-gradient(to right bottom,
+                        var(--color-secondary-light),
+                        var(--color-secondary-dark)),
+                        url(../resources/mobile-optimized/joist.jpg);
+    }
+    .card__picture--cgb {
+      background-image: linear-gradient(to right bottom,
+                        var(--color-secondary-light),
+                        var(--color-secondary-dark)),
+                        url(../resources/mobile-optimized/joist.jpg);
+    }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-1-small.jpg); }
+      background-image: linear-gradient(to right bottom,
+                        var(--color-secondary-light),
+                        var(--color-secondary-dark)),
+                        url(../resources/mobile-optimized/nat-1-small.jpg);
+    }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/coding-1-small.jpg); }
+      background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/coding-1-small.jpg);}
     .card__picture--3 {
       background: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-2-small.jpg) center;
       background-size: cover; }
@@ -363,6 +379,14 @@ h1 {
     background-repeat: no-repeat;
     margin-top: 1.5rem;
     align-self: flex-end; }
+    .card__logo--joist {
+      background-image: url(../resources/joist-logo.jpg);
+      height: 5rem;
+      width: 20rem; }
+    .card__logo--cgb {
+      background-image: url(../resources/cga_logo_light.png);
+      height: 5rem;
+      width: 20rem; }
     .card__logo--1 {
       background-image: url(../resources/woodseer_white.png);
       height: 5rem;
