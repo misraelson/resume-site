@@ -224,6 +224,18 @@
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
     clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
 
+    &--joist {
+      background-image: linear-gradient(to right bottom,
+                        var(--color-secondary-light),
+                        var(--color-secondary-dark)),
+                        url(../resources/mobile-optimized/joist.jpg);
+    }
+    &--cgb {
+      background-image: linear-gradient(to right bottom,
+                        var(--color-secondary-light),
+                        var(--color-secondary-dark)),
+                        url(../resources/mobile-optimized/cgb.jpg);
+    }
     &--1 {
       background-image:  linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)), url(../resources/mobile-optimized/nat-1-small.jpg);
     }
@@ -359,6 +371,20 @@
     margin-top: 1.5rem;
     align-self: flex-end;
     // MUST ASSUME code is ACCESS FROM STYLE.CSS file => find url image directory from there
+    // JOIST
+    &--joist {
+      background-image: url(../resources/joist-logo.jpg);
+      height: 8rem;
+      width: 8rem;
+      border-radius: 1.2rem;
+    }
+    // CGB
+    &--cgb {
+      background-image: url(../resources/cga_logo_light.png);
+      height: 5rem;
+      width: 20rem;
+      border-radius: 1.2rem;
+    }
     // WOODSEER
     &--1 {
       background-image: url(../resources/woodseer_white.png);
