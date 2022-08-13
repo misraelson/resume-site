@@ -8,3 +8,10 @@
 ## TO BUILD RUN:
 
 `npm run build:css`
+
+## MAIN PROJECT FILE:
+`index.html`
+
+## TO EDIT CSS GO TO `/sass`
+
+## ASSETS AND PHOTOS FOUND IN `/resources`
